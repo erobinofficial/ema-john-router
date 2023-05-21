@@ -5,6 +5,7 @@ import Shop from "./components/Shop/Shop";
 import Orders from "./components/Orders/Orders";
 import About from "./components/About/About";
 import Error from "./components/Error/Error";
+import { cartLoader } from "./loaders/cartLoader";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         },
         {
           path: 'orders',
+          loader: cartLoader,
           element: <Orders></Orders>
         },
         {
