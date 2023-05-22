@@ -39,42 +39,6 @@ const Shop = () => {
     addToDb(selectedProduct.id);
   };
 
-  // // calculate quantity of saved cart
-  // const calculateQuantity = (cart) => {
-  //   const reducer = (accumulator, currentValue) => accumulator + currentValue.quantity;
-  //   const quantity = cart.reduce(reducer, 0);
-  //   return quantity;
-  // };
-  // const totalQuantity = calculateQuantity(cart);
-
-  // // Calculate total price
-  // const totalPrice = (cart) => {
-  //   const reducer = (accumulator, currentValue) =>
-  //     accumulator + currentValue.price;
-  //   const total = cart.reduce(reducer, 0);
-  //   return total;
-  // };
-  // const total = totalPrice(cart);
-
-  // // calculate total shipping cost
-  // const totalShipping = (cart) => {
-  //   const reducer = (accumulator, currentValue) =>
-  //     accumulator + currentValue.shipping;
-  //   const total = cart.reduce(reducer, 0);
-  //   return total;
-  // };
-  // const totalShippingCost = totalShipping(cart);
-
-  // //  calculate total tax
-  // const totalTax = (cart) => {
-  //   const reducer = (accumulator, currentValue) =>
-  //     accumulator + currentValue.price;
-  //   const total = cart.reduce(reducer, 0);
-  //   return (total*0.05).toFixed(2);
-  // };
-  // const totalTaxCost = parseFloat(totalTax(cart));
-
-  // const subTotal = total + totalShippingCost + totalTaxCost;
 
   return (
     <div className="grid grid-cols-5">
